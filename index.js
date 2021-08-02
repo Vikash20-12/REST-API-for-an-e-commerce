@@ -8,6 +8,8 @@ const mongoose = require('mongoose');
 const authRoute = require('./routes/authorization');
 const postRoute = require('./routes/posts');
 
+const buyerRoute = require('./routes/buyers');
+
 //connecting to database
 const connectDB = async (req, res)=>{
     const conn = await mongoose.connect(process.env.DB_CONNECT, {
@@ -31,6 +33,8 @@ app.use(express.urlencoded({extended: true}));
 //Route middlewares
 app.use('/api/auth', authRoute);
 app.use('/api/posts',postRoute);
+
+app.use('/api/buyer', buyerRoute);
 
 
 
