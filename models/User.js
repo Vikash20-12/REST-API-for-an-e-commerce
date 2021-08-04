@@ -13,18 +13,13 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    catalog: [
-        {
-        productname: {
-            type: String,
-            required: false
-        },
-        price: {
-            type: [Number],
-            required: false
-        }
+    itemname: {
+        type: String
+    },
+    price: {
+        type: String
     }
-    ]
+
 });
 
 module.exports = mongoose.model('Users', userSchema);

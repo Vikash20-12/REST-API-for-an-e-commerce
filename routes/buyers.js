@@ -19,15 +19,7 @@ router.get('/list-of-sellers', async (req, res) => {
 //catalog list
 router.get('/seller-catalog/:id', async (req, res)=>{
     const {id} = req.params;
-    const seller = await User.findById(id);
-    console.log(seller);
-    console.log({id});
-    // try{
-    //     const sellerfound = await User.find((seller)=> seller.id == {id});
-    //     console.log(seller[0]);
-    // }catch(error){
-    //     res.status(400).send(error);
-    // }
+    
 });
 
 
