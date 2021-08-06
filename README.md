@@ -1,7 +1,8 @@
 # REST-API-for-an-e-commerce
 
-Auth API
+
 # POST /api/auth/register
+
 Register a user (accept username, password, type of user - buyer/seller and can add a catalog if user type is seller).
 
 One can add as many number of items in catalog.
@@ -24,8 +25,11 @@ eg: {
 Let a previously registered user log in (e.g. retrieve authentication token).
 
 eg: {
+    
     "username":"utsav",
+
     "password": "123"
+
 }
 
 # GET /api/buyer/list-of-sellers
