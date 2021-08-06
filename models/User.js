@@ -13,12 +13,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    itemname: {
-        type: String
-    },
-    price: {
-        type: String
-    }
+    catalog: [{
+        itemname: String,
+        itemprice: Number
+    }]
 
 });
 

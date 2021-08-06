@@ -16,12 +16,22 @@ router.get('/list-of-sellers', async (req, res) => {
 
 });
 
-//catalog list
+//display catalog list
 router.get('/seller-catalog/:id', async (req, res)=>{
     const {id} = req.params;
+    try{
+        const sellers = await User.findById(id);
+        res.status(200).send(sellers.catalog);
+    }catch(err){
+        res.status(400).send(err);
+    }
     
 });
 
+//create order
+router.post('/create-order/:seller_id', async(req, res)=>{
+    const {id} = req.params;
+})
 
 
 module.exports = router;
