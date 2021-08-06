@@ -7,7 +7,8 @@ Register a user (accept username, password, type of user - buyer/seller and can 
 
 One can add as many number of items in catalog.
 
-```{
+```
+{
 
     "username":"utsav",
 
@@ -38,7 +39,7 @@ Let a previously registered user log in (e.g. retrieve authentication token).
 
 To get a list of all sellers
 
-output to this will look like:
+Output to this will look like:
 
 ```[
     "610d535db5a88206b4c02d62",
@@ -53,7 +54,7 @@ Get the catalog of a seller by seller_id
 
 eg: /api/buyer/seller-catalog/610d535db5a88206b4c02d62
 
-output to this will look like
+Output to this will look like:
 
 ```
 [
